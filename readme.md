@@ -1,3 +1,4 @@
 ## Screenshots of Docker
 
-![Docker Screenshot](docker-ss.png)
+![Docker Screenshot](docker_ss.png)
+
