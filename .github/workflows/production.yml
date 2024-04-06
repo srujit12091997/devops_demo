@@ -23,8 +23,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run Pytest
-      run: pytest
+
+    - name: List all files
+      run: ls -R
+
+    - name: Run Pytest with verbosity
+      run: pytest -vv
 
     - name: Log in to DockerHub
       if: success() # This ensures the step only runs if the tests pass
